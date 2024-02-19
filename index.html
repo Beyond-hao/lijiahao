@@ -75,12 +75,12 @@
         </div>
     </div>
     <main class="page-content" aria-label="Content">
-        <div class="wrapper">
+        <div class="wrapper" style="font-size:18px;">
             <div class="container">
                 <h1 class="text-center m-3">About Me</h1>
                 <div class="row clearfix">
                     <div class="col-xs-12 col-sm-4 col-md-3 text-center">
-                        <img class="rounded-circle" src="./images/lijiahao.jpg"; width=90%; height=60%></img>
+                        <img class="rounded-circle" src="./images/lijiahao.jpg"; width=99%; height=50%></img>
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
                         <div class="m-4">
@@ -104,14 +104,6 @@
 							<span class="m-2"><a ><img src="./images/harbin.png" width=33%></a></span>
                             <span class="m-2"><a ><img src="./images/Shenzhen University.svg" width=24%></a></span>
                             <span class="m-2"><a ><img src="./images/baidu.png" width=20%></a></span>
-                            <!--
-							<span class="m-2"><a href=""><img src="/images/badges/lpi2.png" width="64px"></a></span>
-                            <span class="m-2"><a href=""><img src="/images/badges/jsnad.png" width="64px"></a></span>
-                            <span class="m-2"><a href=""><img src="/images/badges/jsnsd.png" width="64px"></a></span>
-                            <span class="m-2"><a href=""><img src="/images/badges/ccna.png" width="64px"></a></span>
-                            <span class="m-2"><a href=""><img src="/images/badges/itil.png" width="64px"></a></span>
-                            <span class="m-2"><a href=""><img src="/images/badges/prince2.png" width="64px"></a></span>
-							-->
                         </div>
                     </div>
                 </div>
@@ -173,10 +165,10 @@
 			
 			<br>
             <hr>
-			<div class="container education-container">
+			<div class="container education-container" style="font-size:17px;">
                 <h1 class="text-center m-3">Research Interests</h1>
-				• Biological Sequence Generation and Optimization for target properties.</br>
-				• Molecules design from scratch and its optimization.</br>
+				<li style="font-size:18px;">Biological Sequence Generation and Optimization for target properties.</li>
+				<li style="font-size:18px;">Molecules design from scratch and its optimization.</li>
 				I have delved into the interdisciplinary field of Artificial Intelligence and Biology, 
 				and have successed in enhancing Generative Adversarial Networks (GANs) with Discriminator 
 				Forest and employing GANs to generate biological sequences and optimize them for high activity. 
@@ -194,68 +186,215 @@
 						<h4><b>Discriminator Forests for Improving Generative Diversity</b></h4>
 					</div>
 					<div class="col-md-4">
-						<h4><b>May. 2022 -- Sep. 2023</b></h4>
+						<h5><b>May. 2022 -- Sep. 2023</b></h5>
 					</div>
 				</div>
-            
-				• We proposed a discriminator forest-based Generative Adversarial Networks to improve 
-				its generative diversity theoretically. Discriminator Forest consists of a number of 
-				independent discriminators.</br>
+				<div style="padding: 5px 0px 10px 00px">
+					<li style="font-size:18px;">We proposed a discriminator forest-based Generative Adversarial Networks to improve 
+					its generative diversity theoretically. Discriminator Forest consists of a number of 
+					independent discriminators.</li>
+					
+					<li style="font-size:18px;">The generalization error bound of Discriminator Forest is determined by the strength 
+					of individual discriminators and the correlation among them. Reducing generalization 
+					errors to improve diversity.</li>
 				
-				• The generalization error bound of Discriminator Forest is determined by the strength 
-				of individual discriminators and the correlation among them. Reducing generalization 
-				errors to improve diversity.</br>
-			
-				• Discriminator Forest improve the FID score from 30.71 to 19.27 on STL10 (96×96), 
-				and from 9.22 to 6.87 on LSUN-Cat (256×256).</br>
+					<li style="font-size:18px;">Discriminator Forest improve the FID score from 30.71 to 19.27 on STL10 (96×96), 
+					and from 9.22 to 6.87 on LSUN-Cat (256×256).</li>
+				</div>
 				
-				<div class="row clearfix layout layout-left">
+				<center>
+					<div style="background:#EEEEEE;padding:10px;width:90%;">
+						<table border="2" >
+							<tr style="border-bottom:2px solid">
+								<td width=55% align="center">
+									<span class="m-2"><img src="./images/Forest_GAN.png" width=60%></span>
+								</td>
+								<td width=45% style="vertical-align:top;"> <!-- style="vertical-align:top;" -->
+									<p align="center">
+										<h5 size="8" face="Times New Roman" color="#545454"> The Framework of Forest-GAN</h5>
+										Discriminative Forest GAN (Forest-GAN) that consists of a number of discriminators built 
+										upon bootstrapping datasets. The predictive results of multiple discriminators are 
+										aggregated by an aggregation function.
+										
+										<li>The upper bound of generalization is determined by the strength of individual 
+										discriminators and their correlation.</li>
+										<center><img src="./images/bond.png" width=33%></center>
+									</p>
+								</td>
+							</tr>
+							
+							<tr >
+								<td style="padding: 5px 0px 5px 0px; width:55%"  align="center">
+									<span class="m-2"><img src="./images/Forest-GAN_result.png" width=90%></span>
+								</td>
+								<td width=45% style="vertical-align:top;">
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Result of Forest-GAN</h5>
+										Forest-GAN improves the generation performance. Forest-GAN further improves the 
+										performance to a new record FID of 6.87. The generator from Forest-GAN can generate 
+										more realistic images from intermediate style, while the base model fails to restore the intermediate mode. 
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</center>
+				
+				<div class="row clearfix layout layout-left" style="padding: 30px 0px 0px 0px;">
 					<div class="col-md-8">
 						<h4><b>Enhancer Generation and Optimization for High Activity</b></h4>
 					</div>
 					<div class="col-md-4">
-						<h4><b>Nov. 2022 -- Sep. 2023</b></h4>
+						<h5><b>Nov. 2022 -- Sep. 2023</b></h5>
 					</div>
 				</div>
-            
-				• We proposed feedback mechanism-based enhancer generation and optimization for high activity. 
-				Feedback mechanism guide the generator to focus on feature associated with sequence activity.</br>
 				
-				• Feedback mechanism is integrated with Generative Adversarial Networks. Add a domain constraint 
-				to alleviate the noise from the feedback loop. Curriculum learning raises the goal of optimization 
-				from low-activity enhancers to high-activity enhancers to accelerate the training convergence.</br>
+				<div style="padding: 0px 0px 10px 00px">
+					<li>We proposed feedback mechanism-based enhancer generation and optimization for high activity. 
+					Feedback mechanism guide the generator to focus on feature associated with sequence activity.</li>
+					
+					<li>Feedback mechanism is integrated with Generative Adversarial Networks. Add a domain constraint 
+					to alleviate the noise from the feedback loop. Curriculum learning raises the goal of optimization 
+					from low-activity enhancers to high-activity enhancers to accelerate the training convergence.</li>
+					
+					<li>Feedback optimization improves the average activity of the generated sequences from 0.5 to 4.5, 
+					and the similarity among them is less than 80%. And we find out 10 motifs during the optimization 
+					process, which can directly improve enhancer activity</li>
+				</div>
 				
-				• Feedback optimization improves the average activity of the generated sequences from 0.5 to 4.5, 
-				and the similarity among them is less than 80%. And we find out 10 motifs during the optimization 
-				process, which can directly improve enhancer activity</br>
+				<center>
+					<div style="background:#EEEEEE;padding:10px;width:90%;">
+						<table border="2" >
+							<tr style="border-bottom:2px solid">
+								<td style="padding: 5px 0px 5px 0px; width:55%" align="center">
+									<span class="m-2"><img src="./images/Enhancer-GAN.png" width=95%></span>
+								</td>
+								<td width=45% style="vertical-align:top;"> <!-- style="vertical-align:top;" -->
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Framework of Enhancer-GAN</h5>
+										Enhancer-GAN is based on the feedback-loop mechanism. It combines domain constraint 
+										and curriculum learning to alleviate the external noise and accelerate the optimization processing. 
+										The external analyzer is explored to make prediction for synthetic samples.
+									</p>
+								</td>
+							</tr>
+							
+							<tr style="border-bottom:2px solid">
+								<td style="padding: 5px 0px 5px 0px; width:55%"  align="center">
+									<span><img src="./images/Enhancer-GAN_result-1.jpg" width=31.5%></span>
+									<span><img src="./images/Enhancer-GAN_result-2.jpg" width=29%></span>
+									<span><img src="./images/Enhancer-GAN_result-3.jpg" width=29%></span>
+								</td>
+								
+								<td width=45% style="vertical-align:top;">
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Result-1 of Enhancer-GAN</h5>
+										The activity distribution of generated sequences under three strategies in the optimization 
+										process. The base model makes little improvement for the activity of the generations, 
+										wihle the feedback mechanism significantly improves their activity and the curriculum learning 
+										accelerate the training convergence.
+									</p>
+								</td>
+							</tr>
+							
+							<tr >
+								<td style="padding: 5px 0px 5px 0px; width:55%"  align="center">
+									<span align="center"><img src="./images/Enhancer-GAN_result-2.png" width=70%></span>
+								</td>
+								<td width=45% style="vertical-align:top;">
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Result-2 of Enhancer-GAN</h5>
+										The activity changes caused by motif replacement among fine motifs and flaw motifs. </br>
+										(A) The activity of enhancers in low-activity is increased due to the replacement 
+										of the flaw motif (GGCTTATA) with 10 fine motifs. </br>
+										(B) The activity of enhancers in 
+										high-activity is decreased due to the replacement of fine motifs (GACTCACA) to 
+										10 flaw motifs.
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</center>
 				
 				
-				<div class="row clearfix layout layout-left">
+				<div class="row clearfix layout layout-left" style="padding: 30px 0px 0px 0px;">
 					<div class="col-md-8">
 						<h4><b>Enhancer Identification based on the Language Model</b></h4>
 					</div>
 					<div class="col-md-4">
-						<h4><b>Nov. 2021 -- Dec. 2022</b></h4>
+						<h5><b>Nov. 2021 -- Dec. 2022</b></h5>
 					</div>
 				</div>
-            
-				• We proposed a language model-based enhancer identification, utilizing its attention mechanism 
-				to calculate feature representation for original sequences. Add adversarial training to mitigate 
-				overfitting.</br>
 				
-				• Compared to benchmark methods, our method improves the performance of ACC by 4.0% on a balanced
-				dataset, and 5.0% on the imbalanced dataset.</br>
+				<div style="padding: 0px 0px 10px 00px">
+					<li>We proposed a language model-based enhancer identification, utilizing its attention mechanism 
+					to calculate feature representation for original sequences. Add adversarial training to mitigate 
+					overfitting.</li>
+					
+					<li>Compared to benchmark methods, our method improves the performance of ACC by 4.0% on a balanced
+					dataset, and 5.0% on the imbalanced dataset.</li>
+					
+					<li>We employ the attention mechanism to extract the motif sequences from raw sequences and identify
+					30 motifs, with 6 of them significantly matching with TFBS in JASPAR.</li>
+				</div>
 				
-				• We employ the attention mechanism to extract the motif sequences from raw sequences and identify
-				30 motifs, with 6 of them significantly matching with TFBS in JASPAR.</br>
+				<center>
+					<div style="background:#EEEEEE;padding:10px;width:90%;">
+						<table border="2" >
+							<tr style="border-bottom:2px solid">
+								<td style="padding: 8px 0px 8px 0px; width:55%" align="center">
+									<span class="m-2"><img src="./images/iEnhancer.png" width=95%></span>
+								</td>
+								<td width=45% style="vertical-align:top;"> <!-- style="vertical-align:top;" -->
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Framework of iEnhancer-ELM</h5>
+										We explore the language model into the identification task. iEnhancer-ELM tokenizes 
+										DNA sequences with different scale k-mers and captures the contextual information of 
+										k-mers by incorporating pre-trained BERT-based enhancer language models.
+									</p>
+								</td>
+							</tr>
+							
+							<tr style="border-bottom:2px solid">
+								<td style="padding: 8px 0px 8px 0px; width:55%"  align="center">
+									<span class="m-2"><img src="./images/iEnhancer_Attention.jpg" width=55%></span>
+								</td>
+								<td width=45% style="vertical-align:top;">
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Attention Analysis</h5>
+										We analyze the captured biological patterns by enhancer language models via 
+										exploring the weights in attention mechanism.
+										<li> Calculate the attention weight of a nucleotide in an enhancer sequence.</li>
+										<li> Find out the potential patterns.</li>
+										<li> Filter significant candidates.</li>
+										<li> Generate motifs according to the sequence alignment.</li>
+									</p>
+								</td>
+							</tr>
+							
+							<tr>
+								<td style="padding: 8px 0px 8px 0px; width:55%"  align="center">
+									<span class="m-2"><img src="./images/motif_discovery.svg" width=95%></span>
+								</td>
+								<td width=45% style="vertical-align:top;">
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> The Result of iEnhancer-ELM</h5>
+										Motif discovery via attention mechanism in enhancer language models. 
+										</br>
+										(A) Motifs have high attention weights in corresponding regions. The highlighted regions are the motifs captured by attention mechanism. 
+										</br>
+										(B) 30 discovered motifs by the enhancer language model based on 3-mer on the Liu's dataset.
+									</p>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+				</center>
 				
-				<div class="container">
-					<span class="m-2"><img src="./images/iEnhancer.png" width=50%></span>
-                    <span class="m-2"><img src="./images/iEnhancer_Attention.png" width=65%></span>
-                    <!--
-					<span class="m-2"><img src="./images/iEnhancer_Attention_Result.png" width=40%></span>
-					-->
-                </div>
+				
+				
 				
 			</div>
 			
@@ -265,27 +404,114 @@
                 <h1 class="text-center m-3">Internship Experience</h1>
 				<div class="row clearfix layout layout-left">
 					<div class="col-md-8">
-						<h4><b>Molecular Optimization based on Building Blocksy</b></h4>
+						<h4><b>Molecular Optimization based on Building Blocks</b></h4>
 					</div>
 					<div class="col-md-4">
-						<h4><b>May. 2023 - Aug. 2023</b></h4>
+						<h5><b>May. 2023 - Aug. 2023</b></h5>
 					</div>
 				</div>
-            123123123123</br>
-				• We dedicated to exploring molecular optimization method within discrete space, with the 
-				goal of designing synthesizable molecules for desirable properties in a bottom-up manner.</br>
 				
-				• The discrete space consists of 180K purchasable building blocks and 91 reaction templates. 
-				Genetic Algorithm is our basic model, and the external analyzer was used as the scoring 
-				system according to the target property. Another surrogate model is added to accelerate model 
-				convergence.</br>
+				<div style="padding: 5px 0px 10px 00px">
+					<li>We dedicated to exploring molecular optimization method within discrete space, with the 
+					goal of designing synthesizable molecules for desirable properties in a bottom-up manner.</li>
+					
+					<li>The discrete space consists of 180K purchasable building blocks and 91 reaction templates. 
+					Genetic Algorithm is our basic model, and the external analyzer was used as the scoring 
+					system according to the target property. Another surrogate model is added to accelerate model 
+					convergence.</li>
+					
+					<li>We select three properties, including GSK, JNK and synthetics accessibility. And the results 
+					show that when our synthetic molecules exhibit higher synthesizability when they have the same 
+					score of JSK with existing methods</li>
+				</div>
 				
-				• We select three properties, including GSK, JNK and synthetics accessibility. And the results 
-				show that when our synthetic molecules exhibit higher synthesizability when they have the same 
-				score of JSK with existing methods</br>
+				<center>
+					<div style="background:#EEEEEE;padding:10px;width:90%;">
+						<table border="2" >
+							<tr style="border-bottom:2px solid">
+								<td style="padding: 8px 0px 8px 0px; width:52%" align="center">
+									<span class="m-2"><img src="./images/Internship.png" width=96%></span>
+								</td>
+								<td width=48% style="vertical-align:top;"> <!-- style="vertical-align:top;" -->
+									<p align="center">
+										<h5 size="6" face="Times New Roman" color="#545454"> Molecular Optimization based on Building Blocks</h5>
+										Constructing a generation tree based on purchasable moleculars and reaction 
+										templates, wherein the leaf nodes of the generation tree are selected from 180K 
+										existing building blocks, and the reaction templates form the branches of the tree, 
+										generating the root node from bottom to top. And then, utilize Genetic Algorithms to 
+										optimize the leaf nodes in order to generate products that satisfy desired properties.
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</center>
 				
 			</div>
-			 
+			
+			<br>
+            <hr>
+			<div class="container education-container">
+                <h1 class="text-center m-3">Academic Activities</h1>
+				<div class="row clearfix layout layout-left">
+					<div class="col-md-8" style="padding: 10px 0px 10px 0px;">
+						<h4><b>Oral Presentation in BIBM-2023</b></h4>
+					</div>
+					<div class="col-md-4">
+						<h5><b>December 8, 2023</b></h5>
+					</div>
+				</div>
+				
+				<div class="container Oral" align="center">
+					<table border="0">
+						<tr>
+							<td width=45% style="vertical-align:top;">
+								<p >
+									I, the presenter, went to the main venue of BIBM-2023 to make an oral report and 
+									introduce my work of Enhancer Generation and Optimization for High Activity.
+								</p>
+							</td>
+							
+							<td width=55%>
+								<span class="m-2"><img src="./images/BIBM_Activity_2.jpg" width=46%></span>
+								<span class="m-2"><img src="./images/BIBM_Activity_3.jpg" width=35%></span>
+							</td>
+						
+						</tr>
+					</table>				
+				</div>
+				
+				<div class="row clearfix layout layout-left">
+					<div class="col-md-8" style="padding: 30px 0px 10px 0px;">
+						<h4><b>AAAI-2024 Pre-Talk Session</b></h4>
+					</div>
+					<div class="col-md-4">
+						<h5><b>December 24, 2023</b></h5>
+					</div>
+				</div>
+				
+				<div class="container Oral" align="center">
+					<table border="0">
+						<tr>
+							<td width=45% style="vertical-align:top;">
+								<p >
+									I participated in the Pre-Talk Session, hold by the Shenzhen Computer Federation. 
+									I am the presenter to introduce my work of Discriminator Forest for Improving Generative Diversity.
+				
+								</p>
+							</td>
+							
+							<td width=55%>
+								<span class="m-2"><img src="./images/presentation.png" width=55%></span>
+							</td>
+						
+						</tr>
+					</table>				
+				</div>
+				
+				
+				
+			</div>
 			
 			
             <br>
